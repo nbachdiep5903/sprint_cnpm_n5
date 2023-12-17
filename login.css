@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 400px;
+  margin: 100px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+}
+
+.form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.form h2 {
+  text-align: center;
+  font-weight: normal;
+}
+
+.form input {
+  display: block;
+  width: 95%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form a.forgot-password {
+  color: blue;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.form a.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.form .checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.form .checkbox input {
+  width: auto;
+  margin-right: 10px
+}
+
+.form .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form .buttons button {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form .buttons button.login {
+  background-color: white;
+  color: black;
+}
+
+.form .buttons button.register {
+  background-color: white;
+  color: black
+}
+
+.form .buttons button:hover {
+  opacity: 0.8;
+}

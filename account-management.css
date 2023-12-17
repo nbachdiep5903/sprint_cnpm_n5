@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.web__logo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 10px;
+    left: 10px;
+    background-image: url("./403403478_366759449277410_7687111586701079554_n.png");
+    background-size: cover;
+}
+
+.web__avatar {
+    position: absolute;
+    font-size: 40px;
+    top: 20px;
+    right: 390px;
+}
+
+.web__avatar::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background-color: black;
+    left: 50px;
+    bottom: 50%;
+    opacity: 0.3;
+}
+
+.web__avatar::after {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 1px;
+    background-color: black;
+    right: 50px;
+    bottom: 50%;
+    opacity: 0.3;
+}
+
+.web__authen {
+    position: absolute;
+    font-size: 40px;
+    top: 20px;
+    right: 10px;
+}
+
+.container {
+    position: relative;
+    border: 2px solid black;
+    height: 600px;
+    width: 500px;
+    text-align: center;
+}
+
+.container__header {
+    position: relative;
+    padding: 20px;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.container__col {
+    display: flex;
+    margin-top: 40px;
+}
+
+.container__col {
+    display: flex;
+    margin-top: 20px;
+}
+
+.container__col i {
+    font-size: 35px;
+    margin-left: 70px;
+}
+
+.container__col div {
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+.container__col input {
+    height: 30px;
+    position: absolute;
+    right: 50px;
+    padding: 2px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.container__button {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.link_home {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.link_home a{
+    font-size: 25px;
+}

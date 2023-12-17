@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Logo"> 
+        </div>
+        <div class="form">
+            <h2>Đăng nhập</h2>
+            <form action="home.html" method="post"> 
+                <hr>
+                    <input type="text" name="username" placeholder="Tài khoản" required>
+                    <input type="password" name="password" placeholder="Mật khẩu" required>
+                </fieldset>
+                <a href="forgot.html" class="forgot-password">Quên mật khẩu</a> 
+                <div class="checkbox">
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember"> Ghi nhớ tôi</label>
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="login">Đăng nhập</button>
+                    <button type="button" class="register" onclick="window.location.href='sign-up.html'">Đăng ký</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

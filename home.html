@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newdays Coffee</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=< /span>display=swap');
+        *{
+            padding:0;
+            margin: 0;
+        }
+        body{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            color: #0e0707;
+            line-height: 1.15;
+
+        }
+        #wrapper{
+            max-width: 1170px;
+            margin:0 auto;
+        }
+        .headline{
+            text-align: center;
+            margin: 48px 0px;
+        }
+        h3{
+            font-size: 18px;
+            color:#0d0c0c;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border: 1px solid rgb(75, 68, 68);
+            display: inline-block;
+            color: #555;
+            font-weight:600;
+        }
+        ul.products{
+            list-style: none;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        ul.products li{
+            flex-basis: 30%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        ul.products li img{
+            max-width:100%;
+            height: auto;
+        }
+        ul.products li .product-top{
+            position:relative;
+            overflow:hidden;
+        }
+        ul.products li .product-top .product-thumb{
+            display:block;
+        }
+        ul.products li .product-top .product-thumb img{
+            display:block;
+        }
+        ul.products li .product-top a.buy-now{
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            background-color:rgb(47, 144, 47);
+            color: #fff;
+            padding: 10px 0px;
+            position:absolute;
+            bottom: -37px;
+            width: 100%;
+            transition:0.25s ease-in-out;
+            opacity: 0.85;
+        }
+        ul.products li:hover a.buy-now{
+            bottom:0px;
+        }
+        ul.products li .product-info{
+            padding: 10px 0px;
+        }
+        ul.products li .product-info a{
+            display: block;
+            text-decoration: none;
+        }
+        ul.products li .product-info a.product-cat{
+            font-size: 12px;
+            text-transform: uppercase ;
+            color: rgb(2, 34, 20);
+            padding: 3px 0px;
+        }
+        ul.products li .product-info a.product-name{
+            color: #334862;
+            padding: 3px 0px;
+        }
+        ul.products li .product-info .product-price{
+            color: #111;
+            padding: 2px 0px;
+            font-weight: 600;
+        }
+    </style>
+    <div id="wrapper">
+        <a href="" class="logo">
+            <img src="logo.png" alt=""/>
+        </a>
+        <div class="headline">
+            <h3>Danh mục sản phẩm</h3>
+        </div>
+        <ul class="products">
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="latte.jpg" alt=""/>
+                        </a>
+                        <a href="" class="buy-now">Thêm vào giỏ hàng</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Coffee</a>
+                        <a href="" class="product-name">Latte</a>
+                        <div class="product-price">39.000đ</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="americano.jpg" alt=""/>
+                        </a>
+                        <a href="" class="buy-now">Thêm vào giỏ hàng</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Coffee</a>
+                        <a href="" class="product-name">Americano</a>
+                        <div class="product-price">49.000đ</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="denda.jpg" alt=""/>
+                        </a>
+                        <a href="" class="buy-now">Thêm vào giỏ hàng</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Coffee</a>
+                        <a href="" class="product-name">Cà phê đen đá</a>
+                        <div class="product-price">39.000đ</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="traxanhdenda.jpg" alt=""/>
+                        </a>
+                        <a href="" class="buy-now">Thêm vào giỏ hàng</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Tea</a>
+                        <a href="" class="product-name">Trà xanh latte</a>
+                        <div class="product-price">49.000đ</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="tradaocamxa.jpg" alt=""/>
+                        </a>
+                        <a href="" class="buy-now">Thêm vào giỏ hàng</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Tea</a>
+                        <a href="" class="product-name">Trà đào cam xả</a>
+                        <div class="product-price">59.000đ</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="trasuaolong.jpg" alt=""/>
+                        </a>
+                        <a href="" class="buy-now">Thêm vào giỏ hàng</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Milk tea</a>
+                        <a href="" class="product-name">Trà sữa Olong</a>
+                        <div class="product-price">45.000đ</div>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</body>
+</html>

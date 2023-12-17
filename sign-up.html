@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="sign-up.css">
+    <script>
+        function successMessage() {
+          alert('Bạn đã đăng ký thành công!');
+        }
+      </script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" >
+        </div>
+        <div class="form">
+            <h2>Đăng ký</h2>
+            <hr>
+            <form id="registrationForm">
+                <div class="input-group">
+                    <img src="user.png" alt="User Icon">
+                    <input type="text" name="username" placeholder="Tài khoản" required>
+                </div>
+                <div class="input-group">
+                    <img src="lock.png" alt="Lock Icon"> 
+                    <input type="password" name="password" placeholder="Mật khẩu" required>
+                </div>
+                <div class="input-group">
+                    <img src="phone.png" alt="Phone Icon">
+                    <input type="tel" name="phone" placeholder="Điện thoại" required>
+                </div>
+                <div class="input-group">
+                    <img src="email.png" alt="Email Icon">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <button class="button" onclick="successMessage()">Đăng ký</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

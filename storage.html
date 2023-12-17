@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <title>Quản lý kho hàng</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 10;
+    }
+
+    .header {
+      padding: 20px;
+      text-align: left;
+      background: #ffffff;
+      color: black;
+    }
+
+    .header .logo {
+      float: left;
+    }
+
+    .header a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 70px;
+      margin-left: 20px;
+    }
+
+    .header .nav-icons {
+      float: right;
+    }
+
+    .header .nav-icons img {
+      width: 25px;
+      height: 25px;
+      margin: 0 10px;
+    }
+
+    .sidebar {
+      width: 200px;
+      background: #f1f1f1;
+      float: left;
+      height: 100vh;
+    }
+
+    .sidebar a {
+      display: block;
+      color: rgb(0, 174, 255);
+      padding: 16px;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      background: #ddd;
+      color: black;
+    }
+
+    .main {
+      margin-left: 200px;
+      padding: 20px;
+    }
+    .main .stats {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+    .main .stats .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .main .stats .item img {
+      width: 50px;
+      height: 50px;
+    }
+    .main .stats .item p {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .main .table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .main .table th, .main .table td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+    .main .table th {
+      background-color: white;
+      color: black;
+    }
+    .main .table td button {
+      margin: 5px;
+      padding: 5px;
+      border: none;
+      cursor: pointer;
+    }
+    .main .select {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20px;
+    }
+    .main .select label {
+      margin-right: 10px;
+    }
+    .main .select select {
+      width: 200px;
+    }
+    .dashboard {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 5px;
+    }
+
+    .dashboard-item {
+      width: 30%;
+      padding: 20px;
+      background: #f1f1f1;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    .dashboard-item img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .dashboard-item .number {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .dashboard-item .label {
+      font-size: 16px;
+      color: #888;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .table th {
+      background: #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .table td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">
+      <img src="logo.png" alt="Logo" width="70" height="70">
+    </div>
+    <a href="#"> Newdays.com/receipt </a>
+    <div class="nav-icons">
+      <img src="bell.png" alt="Home icon">
+      <img src="chat.png" alt="Notification icon">
+      <img src="user.png" alt="User icon">
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <a href="home.html"> Trang chủ </a>
+    <a href="receipt.html"> Quản lý đơn hàng </a>
+    <a href="storage.html"> Quản lý kho hàng </a>
+    <a href="#"> Thông báo </a>
+  </div>
+
+  <div class="main">
+    <div class="dashboard">
+      <div class="dashboard-item">
+        <img src="users.png" alt="Users icon">
+        <div class="number"> 200 </div>
+        <div class="label"> New Users </div>
+      </div>
+      <div class="dashboard-item">
+        <img src="visitors.png" alt="Visitors icon">
+        <div class="number"> 15K </div>
+        <div class="label"> Visitors </div>
+      </div>
+      <div class="dashboard-item">
+        <img src="rate.png" alt="Rate icon">
+        <div class="number"> 70% </div>
+        <div class="label"> Rate </div>
+      </div>
+    </div>
+
+    <h2> Kho hàng </h2>
+    <table class="table">
+      <tr>
+        <th> ID sản phẩm </th>
+        <th> Tên sản phẩm </th>
+        <th> Số lượng </th>
+        <th> Đơn vị tính </th>
+        <th> Nhà cung cấp </th>
+        <th> Giá thành </th>
+        <th> Trạng thái </th>
+      </tr>
+      <tr>
+        <td> cfbot </td>
+        <td> Cà phê đen </td>
+        <td> 30 </td>
+        <td> Túi </td>
+        <td> NCC1 </td>
+        <td> 39.000đ </td>
+        <td> Đủ </td>
+      </tr>
+      <tr>
+        <td> kembeo </td>
+        <td> Kem béo </td>
+        <td> 25 </td>
+        <td> Hộp </td>
+        <td> NCC2 </td>
+        <td> 45.000đ </td>
+        <td> Đủ </td>
+      </tr>
+      <tr>
+        <td> botmatcha </td>
+        <td> Bột matcha </td>
+        <td> 55 </td>
+        <td> Gói </td>
+        <td> NCC3 </td>
+        <td> 250.000đ </td>
+        <td> Tồn nhiều </td>
+      </tr>
+      <tr>
+        <td> vai </td>
+        <td> Vải hộp </td>
+        <td> 20 </td>
+        <td> Hộp </td>
+        <td> NCC4 </td>
+        <td> 200.000đ </td>
+        <td> Cần nhập thêm </td>
+      </tr>
+      <tr>
+        <td> dao </td>
+        <td> Đào hộp </td>
+        <td> 6 </td>
+        <td> Hộp </td>
+        <td> NCC5 </td>
+        <td> 150.000đ </td>
+        <td> Thiếu </td>
+      </tr>
+    </table>
+    <div class="table-buttons">
+      <button> Thêm </button>
+      <button> Sửa </button>
+      <button> Xóa </button>
+      <button> Thay đổi trạng thái </button>
+    </div>
+    <div class="select">
+        <label for="item">Chọn một hàng:</label>
+        <select name="item" id="item">
+          <option value="Cà phê đen">Cà phê đen</option>
+          <option value="Đào">Đào</option>
+          <option value="Vải">Vải</option>
+          <option value="Bột matcha">Bột matcha</option>
+          <option value="Kem béo">Kem béo</option>
+        </select>
+    </div>
+  </div>
+</body>
+</html>
